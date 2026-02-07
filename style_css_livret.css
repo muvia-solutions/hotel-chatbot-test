@@ -1,0 +1,93 @@
+/* Your CSS styles here *//* Cacher le texte dâ€™origine des boutons */
+.bpModalButtonConfirm,
+.bpModalButtonCancel {
+    color: transparent !important;
+    position: relative;
+}
+
+/* Traduction pour "New conversation" â†’ "Nouvelle conversation" */
+.bpModalButtonConfirm::after {
+    content: "Nouvelle conversation";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    /* Texte blanc */
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* Traduction pour "Cancel" â†’ "Annuler" en noir */
+.bpModalButtonCancel::after {
+    content: "Annuler";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    /* Texte noir */
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* 1) Ciblage du <p> systÃ¨me et masquage de son texte */
+div.bpMessageContainer>p.bpMessageBlocksTextText {
+    visibility: hidden !important;
+    position: relative !important;
+}
+
+/* 2) Injection du contenu â€œAujourdâ€™huiâ€ Ã  la place */
+div.bpMessageContainer>p.bpMessageBlocksTextText::before {
+    content: "Aujourd'hui" !important;
+    visibility: visible !important;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+}
+
+/* Cache Description en dessous */
+.bpModalTitle {
+    visibility: hidden;
+    position: relative;
+    height: 60px;
+    /* Ajuste selon besoin */
+}
+
+
+/* Description en dessous */
+.bpModalTitle::after {
+    content: "Cette action supprimera tous les messages prÃ©cÃ©dents de la session. Voulez-vous continuer ?";
+    visibility: visible;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    width: 80%;
+    pointer-events: none;
+}
+
+/* 1) Ciblage du <p> systÃ¨me et masquage de son texte */
+div.bpMessageContainer.bpMessageDeliveryStatus:: {
+    visibility: hidden !important;
+    position: relative !important;
+}
+
+/* 2) Injection du contenu â€œDÃ©livrÃ©â€ Ã  la place */
+div.bpMessageContainer.bpMessageDeliveryStatus::after {
+    content: "DistribuÃ©" !important;
+}
+
+/* Cache complÃ¨tement le header du chatbot */
+.bpHeaderContainer {
+  display: none !important;
+}
+
+/* Cache la zone de prÃ©sentation (Avatar + Description) en haut de la liste des messages */
+.bpMessageListMarqueeContainer {
+  display: none !important;
+}
