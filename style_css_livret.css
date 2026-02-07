@@ -91,3 +91,8 @@ div.bpMessageContainer.bpMessageDeliveryStatus::after {
 .bpMessageListMarqueeContainer {
   display: none !important;
 }
+
+/* Cache le footer "Développé par MUVIA" */
+.bpComposerFooter {
+  display: none !important;
+}
