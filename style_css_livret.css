@@ -58,7 +58,7 @@ div.bpMessageContainer>p.bpMessageBlocksTextText::before {
 
 /* Description en dessous */
 .bpModalTitle::after {
-    content: "Cette action supprimera tous les messages prÃ©cÃ©dents de la session. Voulez-vous continuer ?";
+    content: "Cette action supprimera tous les messages précédents de la session. Voulez-vous continuer ?";
     visibility: visible;
     position: absolute;
     top: 65%;
@@ -79,7 +79,7 @@ div.bpMessageContainer.bpMessageDeliveryStatus:: {
 
 /* 2) Injection du contenu â€œDÃ©livrÃ©â€ Ã  la place */
 div.bpMessageContainer.bpMessageDeliveryStatus::after {
-    content: "DistribuÃ©" !important;
+    content: "Distribué" !important;
 }
 
 /* Cache complÃ¨tement le header du chatbot */
