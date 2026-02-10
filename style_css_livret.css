@@ -118,3 +118,13 @@ div.bpMessageContainer.bpMessageDeliveryStatus::after {
     border-color: #0051FF !important;
     cursor: pointer;
 }
+
+/* Déplace le bouton Précédent vers la gauche */
+.bpMessageBlocksCarouselBackButton {
+    transform: translateY(-50px) !important; /* Ajustez la valeur (ex: -20px) pour l'écarter davantage */
+}
+
+/* Déplace le bouton Suivant vers la droite */
+.bpMessageBlocksCarouselNextButton {
+    transform: translateY(-50px) !important; /* Ajustez la valeur (ex: 20px) pour l'écarter davantage */
+}
