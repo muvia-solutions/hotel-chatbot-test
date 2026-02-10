@@ -96,3 +96,25 @@ div.bpMessageContainer.bpMessageDeliveryStatus::after {
 .bpComposerFooter a {
   display: none !important;
 }
+
+/* Cible les boutons Suivant ET Précédent */
+.bpMessageBlocksCarouselNextButton, 
+.bpMessageBlocksCarouselBackButton {
+    background-color: #0051FF !important; /* Votre bleu */
+    border-color: #0051FF !important;
+    border-radius: 50%; /* Pour garantir qu'ils soient bien ronds si besoin */
+}
+
+/* Cible les icônes SVG à l'intérieur de ces deux boutons */
+.bpMessageBlocksCarouselNextButton svg, 
+.bpMessageBlocksCarouselBackButton svg {
+    stroke: #FFFFFF !important; /* Flèches en blanc pour le contraste */
+}
+
+/* Effet au survol pour les deux */
+.bpMessageBlocksCarouselNextButton:hover, 
+.bpMessageBlocksCarouselBackButton:hover {
+    background-color: #0051FF !important;
+    border-color: #0051FF !important;
+    cursor: pointer;
+}
