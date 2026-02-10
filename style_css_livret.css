@@ -121,11 +121,11 @@ div.bpMessageContainer.bpMessageDeliveryStatus::after {
 
 /* Déplace le bouton Précédent vers la gauche */
 .bpMessageBlocksCarouselBackButton {
-    transform: translateY(-63px) !important; /* Ajustez la valeur (ex: -20px) pour l'écarter davantage */
+    transform: translateY(-58px) !important; /* Ajustez la valeur (ex: -20px) pour l'écarter davantage */
 }
 
 /* Déplace le bouton Suivant vers la droite */
 .bpMessageBlocksCarouselNextButton {
-    transform: translateY(-63px) !important; /* Ajustez la valeur (ex: 20px) pour l'écarter davantage */
+    transform: translateY(-58px) !important; /* Ajustez la valeur (ex: 20px) pour l'écarter davantage */
 }
 
