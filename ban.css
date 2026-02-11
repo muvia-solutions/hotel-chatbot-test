@@ -1,4 +1,0 @@
-/* Cache la zone de texte et le bouton d'envoi */
-.bp-composer-container, .bpComposerInputContainer, textarea {
-    display: none !important;
-}
