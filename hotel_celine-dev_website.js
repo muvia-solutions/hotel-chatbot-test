@@ -59,6 +59,7 @@
                     botName: "Hôtel Celine ★★★",
                     botAvatar: "https://files.bpcontent.cloud/2026/02/05/22/20260205225304-DI876500.jpeg",
                     botDescription: "L'hôtel Céline, niché au cœur du maquis corse et surplombant le Golfe d’Ajaccio, vous invite à vivre une parenthèse de détente et de sérénité.",
+                    fabImage: "https://files.bpcontent.cloud/2026/02/11/15/20260211150604-KHJYO8WW.jpeg",
                     website: { title: "Site Web", link: "https://www.hotelcelinecorse.fr/" },
                     email: { title: "hotelcelinecorse@orange.fr", link: "hotelcelinecorse@orange.fr" },
                     phone: { title: "+33495254105", link: "+33495254105" },
