@@ -128,4 +128,38 @@ div.bpMessageContainer.bpMessageDeliveryStatus::after {
 .bpMessageBlocksCarouselNextButton {
     transform: translateY(-58px) !important; /* Ajustez la valeur (ex: 20px) pour l'écarter davantage */
 }
+/* Your CSS styles here */
+/* Style du bouton "Retour en bas" */
+.bpMessageListScrollDownButton {
+    background-color: #0051FF !important; /* Votre bleu */
+    border-color: #0051FF !important;
+    border-radius: 50% !important; /* Pour qu'il soit bien rond */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important; /* Ajoute un peu de relief */
+    cursor: pointer !important;
+}
+
+/* Effet au survol */
+.bpMessageListScrollDownButton:hover {
+    background-color: #0051FF !important;
+    transform: scale(1.1) !important; /* Légère animation de grossissement au survol */
+    transition: all 0.2s ease !important;
+}
+
+/* On change la couleur de l'icône générée par le ::after */
+.bpMessageListScrollDownButton::after {
+    /* Si c'est un caractère (comme une flèche texte) */
+    color: #FFFFFF !important;
+    
+    /* Si c'est une image de masque (très fréquent dans les versions récentes) */
+    background-color: #FFFFFF !important;
+    
+    /* On s'assure que l'opacité est au maximum */
+    opacity: 1 !important;
+}
+
+/* Au cas où l'icône utiliserait un masque CSS pour la couleur */
+.bpMessageListScrollDownButton::after {
+    -webkit-mask-replace: add !important;
+    mask-repeat: no-repeat !important;
+}
 
