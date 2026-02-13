@@ -4,7 +4,7 @@
         
         // --- 🔒 SÉCURITÉ : ALLOW ORIGIN ---
         const currentDomain = window.location.hostname;
-        const allowedDomains = ["www.hotelcelinecorse.fr", "hotelcelinecorse.fr"];
+        const allowedDomains = ["www.hotelcelinecorse.fr", "hotelcelinecorse.fr", "https://perfect-tone-332603.framer.app", "perfect-tone-332603.framer.app"];
 
         // Si le domaine n'est pas dans la liste, on arrête tout.
         if (!allowedDomains.includes(currentDomain)) {
